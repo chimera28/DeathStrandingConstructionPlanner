@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <script src="jquery-3.5.1.slim.min.js"></script>
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="page" class="container">
+            <div class="tcontent" data-zoffset="5"><span id="dbg">s</span>
+            <h1>Structure Construction Planner</h1></div>
+            <div class="row">
+                
+                <div id="form" class="column half">
+                    <div class="tcontent" data-zoffset="5">
+                    
+                    <div class="cstructures">
+                        <div class="istructure" id= "s0">
+                            <h4 class="Sn">Structure 0</h4>
+                            <p>
+                                Resin : <input type="needed" class="Rm0"><br>
+                                Metal : <input type="needed" class="Rm1"><br>
+                                Ceramics : <input type="needed" class="Rm2"><br>
+                            </p>
+                            <p>
+                                SUMS - R: <span class="Rmt0"></span>
+                                M: <span class="Rmt1"></span>
+                                C: <span class="Rmt2"></span>
+                            </br>
+                                PACKS - R : <span class="Rmp0"></span>
+                                M : <span class="Rmp1"></span>
+                                C : <span class="Rmp2"></span>
+                            </br>
+                                Cargos : <span class="Cst"></span>
+                                Weights : <span class="Cwt"></span>
+                            </p>
+        
+                        </div>
+                    </div>
+
+                    <p>
+                        <a id="add" class="button" href="#">+</a>
+                        <a id="sub" class="button" href="#">-</a>
+                    </p>
+
+                    <button id="updated" onclick="updateForm()">Update!</button>
+                </div>
+                </div>
+
+                <div id="results" class="column half">
+
+                    <div class="tcontent" data-zoffset="5">
+                        <div class="cresults">
+                            <div class="iresult" id="r0">
+                                <h4 class="Sn">Structure 0</h4>
+                                <div class="index0"><h4>Resin</h4></div>
+                                <div class="index1"><h4>Metal</h4></div>
+                                <div class="index2"><h4>Ceramics</h4></div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+            BRIDGES
+        </div>
+    </body>
+
+</html>

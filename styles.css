@@ -1,0 +1,101 @@
+html::before{
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url("res/bg.jpg");
+    background-size: cover;
+    filter:blur(12px);
+}
+body{
+    perspective: 1200px;
+    perspective-origin: center;
+    padding: 90 0;
+}
+.container {
+    background-color: aquamarine;
+    position: inherit;
+    width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    transform: none;
+    transition: transform 120ms;
+}
+
+#form{
+    background-color: burlywood;
+}
+
+#results{
+    background-color: darkseagreen;
+    min-height: 60px;
+    padding-bottom: 14px;
+}
+
+.half{
+    width: 50%;
+    display: block;
+    padding: 0;
+    float: left;
+    box-sizing: border-box;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both; }
+
+.button {
+    min-height: 42px;
+    min-width: 64px;
+    padding: 8px;
+    margin-left: 4px;
+    background-color: deepskyblue;
+} 
+
+.mat-block {
+    display: inline-block;
+    padding: 3px;
+    margin: 3px;
+    margin-right: 6px;
+    z-index: 1;
+    position: relative;
+    background-color: rgba(34, 139, 34, 0.4);
+}
+
+.mat-block span{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@keyframes example {
+    0%   {bottom:0%;height: 0%;}
+    60%  {bottom:0%; height: 100%;}
+    100% {bottom: 100%; height: 0%; display: none;}
+  }
+  
+.mat-block::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    /* z-index: -1; */
+    background-color: skyblue; 
+    animation-name: example;
+    animation-duration: 360ms;
+}
+
+.tcontent {
+    transform-style: flat;
+    transition: transform 120ms;
+}
+
+.cstructures, .cresults {
+    height: 480px;
+    overflow-y: scroll;
+}
+
+.istructure, .iresult {
+    border-bottom: 1px solid gray;
+}
